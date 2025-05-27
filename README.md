@@ -166,7 +166,8 @@ docker-compose up -d
 After the server is successfully up and running, you can proceed with running the seeding process.
 
 ```
-docker exec -it my-backend npm run seed:run
+docker exec -it my-backend npm run migrate:latest
+docker exec -it my-backend npm run seed
 ```
 
 ## Development
